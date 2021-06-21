@@ -1,0 +1,14 @@
+<form action="/" method = "POST">
+    <p>Url <input type = "text" name = "Url" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
+
+{% if orig %}
+<p>Original image: <a href={{ orig }}> {{ orig }} </a></p>
+{% endif %}
+
+{% if unicodeData %}
+{% for line in unicodeData %}
+{{ line }}<br>
+{% endfor %}
+{% endif %}
