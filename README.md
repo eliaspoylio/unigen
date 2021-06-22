@@ -2,6 +2,9 @@
 
 Tool for converting images to unicode block art.
 
+Try it out:
+https://unigenerator.herokuapp.com/
+
 ```
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ▚▚▚▀▀▀▀▀▀▚▀▀▀▀▀▀▀▀▀▀▀▀▀▀▚▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▚▚▚▚▀
