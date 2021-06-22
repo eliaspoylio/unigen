@@ -12,13 +12,21 @@ def getTileAverage(image):
     return np.average(nImage.reshape(w*h))
 
 
-def converToUnicode(url):
+def converToUnicode(uiUrl, uiCols, uiScale):
     blockScale = '█▓▙▀▚▌▝▏▒░.'
-    cols = 48
-    scale = 0.43
+    cols = uiCols
+    scale = uiScale
+    maxCols = 100
+    maxScale = 1
+
+    if uiUrl == '' or uiCols == None or uiScale == None:
+        return [f'Empty url field']
+
+    if uiCols > maxCols or uiScale > maxScale:
+        return [f'Max number of columns: {maxCols}', f'Max scale: {maxScale}']
     
     #open image from url and convert to grayscale
-    image = Image.open(urllib.request.urlopen(url)).convert('L')
+    image = Image.open(urllib.request.urlopen(uiUrl)).convert('L')
 
     origWidth, origHeigth = image.size[0], image.size[1]
     # tile sizes
